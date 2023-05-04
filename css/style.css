@@ -1,0 +1,420 @@
+/*Styling Body*/
+
+*, *:hover {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --clr-primary-100: #2b95fd;
+    --clr-primary-300: #df1763;
+    --clr-primary-500: #a4a4a4;
+    --clr-primary-700: #4e65ec;
+    --clr-primary-900: #7a30d3;
+    --ff-secondary: Bahnschrift;
+    scroll-behavior: smooth;
+} 
+
+/*Styling Header Navigation Bar*/
+
+.header-nav {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: +1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1% 5% 1% 4%;
+    gap: 1%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header-logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+/*Coding Pop-Up Form*/
+
+.popup-form {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin: -150px 0 0 -150px;
+    left: 50%;
+    border: 3px solid #f1f1f1;
+    z-index: 100;
+}
+  
+.form-container {
+    max-width: 300px;
+    padding: 3%;
+    background-color: white;
+}
+  
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 4%;
+    margin: 2% 0 5% 0;
+    border: none;
+    background: #f1f1f1;
+}
+  
+.form-container .btn {
+    background-color: var(--clr-primary-100);
+    color: white;
+    padding: 4% 5%;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 2%;
+    opacity: 0.8;
+}
+  
+.form-container .cancel {
+    background-color: var(--clr-primary-300);
+}
+  
+/*Code for main section*/
+
+.main-bg-image {
+    background: no-repeat center url('../images/hero-photo.png');
+    background-size: cover;
+    width: 100%;
+}
+
+.main-text {
+    color: white;
+    padding: 15% 0 20% 20%;
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 3.3rem;
+    margin-bottom: 1%;
+}
+
+.main-text h6 {
+    line-height: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 3%;
+}
+
+.main-text .subscribe-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1% 4.5%;
+    border-radius: 100vmax;
+}
+
+/*Styling reusable elements*/
+
+.header-centered {
+    font-weight: 800;
+    font-size: 1.3rem;
+    color: var(--clr-primary-100);
+    text-align: center;
+}
+
+.paragraph-centered {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    color: var(--clr-primary-500);
+    padding: 0 0 2% 0;
+    text-align: center;
+}
+
+/*Code for pricing section*/
+
+.pricing-section {
+    width: 100%;
+}
+
+.pricing-grid {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+.music-text {
+    text-align: center;
+    padding-top: 1%;;
+}
+
+/*Coding features section*/
+
+.features-section {
+    width: 100%;
+}
+
+.features-bg-image {
+    background: no-repeat center url(../images/about-photo.png);
+    background-size: cover;
+    width: 100%;
+}
+
+.features-grid {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 3em;
+    justify-content: center;
+    padding: 20% 0 20% 0;
+}
+
+/*Albums section code*/
+
+.albums {
+    width: 100%;
+}
+
+.albums-wrapper {
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2,1fr);
+    gap: 2em;
+    justify-content: center;
+    margin: 6% auto;
+}
+
+/*Footer code*/
+
+footer {
+    padding: 1% 5% 1% 4%;
+    background-color: var(--clr-primary-100);
+}
+
+.footer-div {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1%;
+}
+
+.footer-logo {
+    cursor: pointer;
+    margin-right: auto;
+}
+
+/*Styling subscribe and log in buttons*/
+
+.subscribe-btn {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: white;
+    background-color: var(--clr-primary-300);
+    padding: 0.5% 2.4%;
+    border-radius: 100vmax;
+    border: 1px solid transparent;
+    text-align: center;
+}
+
+.login-btn {
+    font-size: 0.8rem;
+    font-weight: 800;
+    color: var(--clr-primary-300);
+    background-color: white;
+    border: 1.8px solid var(--clr-primary-300);
+    padding: 0.5% 2.2%;
+    border-radius: 100vmax;
+    text-align: center;
+}
+
+/*Styling pricing cards*/
+
+.cards-container {
+    width: 15em;
+    height: 22em;
+    background-color: var(--clr-primary-100);
+    color: white;
+    line-height: 0.8rem;
+    padding: 1%;
+    border-radius: 2%;
+    text-align: center;
+} 
+
+.cards-container h2 {
+    font-size: 1.7rem;
+    margin-bottom: 8%;
+}
+
+.cards-container h5 {
+    font-size: 1rem;
+    margin: 0 0 22% 0;
+}
+
+.cards-container p {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    color: white;
+}
+
+.cards-container .login-btn {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--clr-primary-100);
+    border: 1px solid white;
+    padding: 5% 25%;
+    border-radius: 100vmax;
+    text-align: center;
+}
+
+.cards-button-container {
+    padding-top: 10%;
+}
+
+.second-card, .second-card .login-btn {
+    background-color: var(--clr-primary-700);
+}
+
+.third-card, .third-card .login-btn {
+    background-color: var(--clr-primary-900);
+}
+
+/*Styling features cards*/
+
+.features-container {
+    width: 17em;
+    height: 17em;
+    color: white;
+    padding: 1%;
+    text-align: center;
+}
+
+.one, .two, .three {
+    width: 24%;
+    height: 27%;
+    padding-top: 5%;
+}
+
+.features-container h2 {
+    padding-top: 10%;
+    font-weight: 600;
+}
+
+.features-container p {
+    font-size: 0.9rem;
+}
+
+/*Adding effects to website*/
+
+.subscribe-btn:hover {
+    background-color: #bd1254;
+    transition: 300ms ease-in-out 100ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.login-btn:hover {
+    transition: 300ms ease-in-out 100ms;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.first-card .login-btn:hover {
+    background-color: #1c6dbe;
+    transition: 300ms ease-in-out 100ms;
+}
+
+.second-card .login-btn:hover {
+    background-color: #3a4bae;
+    transition: 300ms ease-in-out 100ms;
+}
+
+.third-card .login-btn:hover {
+    background-color: #53228f;
+    transition: 300ms ease-in-out 100ms;
+}
+
+.album-1:hover, .album-2:hover, .album-3:hover, .album-4:hover, .album-5:hover, .album-6:hover {
+    -webkit-filter: brightness(115%);
+    transition: 300ms ease-in-out 100ms;
+    transform: translateY(-3%);
+}
+
+/*Making website responsive*/
+
+@media (max-width: 960px) {
+    
+    body {
+        font-family: var(--ff-secondary);
+    }
+
+    .popup-form {
+        scale: 0.75;
+        position: absolute;
+        top: 15%;
+        margin: 0 0 0 -150px;
+        left: 50%;
+    }
+
+    .main-text {
+        padding-left: 15%;
+    }
+
+    .main-text h1 {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+
+    .main-text h6 {
+        font-size: 1rem;
+        margin-bottom: 4%;
+    }
+
+    .pricing-grid {      
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .features-grid {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .albums-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .album-1, .album-2, .album-3, .album-4, .album-5, .album-6 {
+        margin-bottom: 5%;
+    }
+
+    .footer-div {
+        gap: 0.2%;
+    }
+
+    .fb, .insta, .twitter, .vimeo {
+        scale: 0.7;
+    }
+}

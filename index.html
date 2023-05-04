@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jukebox Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="pop-up.js"></script>
+  </head>
+
+  <body>
+    <header>
+    <nav class="header-nav">
+    <img src="images/jukebox-logo-blue.png" class="header-logo" alt="header-logo">
+    <a href="#pricing-section" class="subscribe-btn">Subscribe</a>
+    <a href="#" class="login-btn" onclick="openForm()">Log In</a>
+    </nav>
+    </header>
+
+    <div class="popup-form" id="myform">
+    <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+    <button type="submit" class="btn">Login</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    </form>
+    </div>
+    
+    <main>
+    <div class="main-bg-image">
+    <div class="main-text"> 
+    <h1>Millions of songs<br> at your fingertips.</h1>
+    <h6>Play any song, anywhere, on any device.</h6> 
+    <a href="#pricing-section" class="subscribe-btn">Subscribe Today</a>
+    </div>
+    </div>
+    </main>
+    
+    <div id="pricing-section">
+    <div class="music-text">
+    <h3 class="header-centered">Your Music. Your Way.</h3>
+    <p class="paragraph-centered">Upgrade to premium and get your first 2 months free of charge!</p>
+    </div>
+    <section class="pricing-grid">
+    <div class="cards-container first-card">
+    <h2>Basic</h2>
+    <h5>Free</h5> 
+    <p>MP3 audio</p>
+    <p>100 songs</p>
+    <p>Ads every 10 minutes</p>
+    <p>Up to 1 user</p>
+    <p>1 device</p> 
+    <div class="cards-button-container"> 
+    <a href="#" class="login-btn">Sign Up</a> 
+    </div>
+    </div>
+    <div class="cards-container second-card">
+    <h2>Plus</h2>
+    <h5>$10/month</h5>
+    <p>16-bit audio</p>
+    <p>200 songs</p>
+    <p>No ads</p>
+    <p>Up to 3 users</p>
+    <p>2 devices</p>
+    <div class="cards-button-container"> 
+    <a href="#" class="login-btn">Sign Up</a> 
+    </div>
+    </div>
+    <div class="cards-container third-card">
+    <h2>Premium</h2>
+    <h5>$20/month</h5>
+    <p>Lossless Hi-Fi audio</p>
+    <p>Unlimited songs</p>
+    <p>No ads</p>
+    <p>Up to 5 users</p>
+    <p>Unlimited devices</p>
+    <div class="cards-button-container"> 
+    <a href="#" class="login-btn">Sign Up</a> 
+    </div>
+    </section>
+    </div>
+    
+    <div class="features-section">
+    <div class="features-bg-image">
+    <section class="features-grid">
+    <article class="features-container stream">
+    <img src="images/icon-1.png" alt="icon one" class="icon one">
+    <h2>Stream to Any Device</h5>
+    <p>Play all your favourite music on <br>
+    any device. Anytime. Anywhere.</p>
+    </article>
+    <article class="features-container audio">
+    <img src="images/icon-2.png" alt="icon two" class="icon two">
+    <h2>High Quality Audio</h5>
+    <p>Get the best sounding audio of any <br>
+    streaming service on the web.</p>
+    </article>
+    <article class="features-container songs">
+    <img src="images/icon-3.png" alt="icon three" class="icon three">
+    <h2>Millions of Songs</h5>
+    <p>Find all your favourite artists in <br>
+    our extensive music library.</p>
+    </article>
+    </section>
+    </div>
+    </div>
+
+    <div class="albums">
+    <h3 class="header-centered">All your favourite artists. In one place.</h3>
+    <p class="paragraph-centered">Upgrade to premium and get your first 2 months free of charge!</p>
+    <section class="albums-wrapper">
+    <a href="https://open.spotify.com/album/4yP0hdKOZPNshxUOjY0cZj"> <img src="images/album-1.png" class="album-1" alt="album-1"> </a>
+    <a href="https://open.spotify.com/album/7fJJK56U9fHixgO0HQkhtI"> <img src="images/album-2.png" class="album-2" alt="album-2"> </a>
+    <a href="https://open.spotify.com/album/1MmVkhiwTH0BkNOU3nw5d3"> <img src="images/album-3.png" class="album-3" alt="album-3"> </a>
+    <a href="https://open.spotify.com/album/5658aM19fA3JVwTK6eQX70"> <img src="images/album-4.png" class="album-4" alt="album-4"> </a>
+    <a href="https://open.spotify.com/album/41GuZcammIkupMPKH2OJ6I"> <img src="images/album-5.png" class="album-5" alt="album-5"> </a>
+    <a href="https://open.spotify.com/album/04E0aLUdCHnhnnYrDDvcHq"> <img src="images/album-6.png" class="album-6" alt="album-6"> </a>
+    </section>
+    </div>
+
+    <footer>
+    <div class="footer-div">
+    <img src="images/jukebox-logo-white.png" class="footer-logo" alt="footer-logo">
+    <a href="https://www.facebook.com/"> <img src="images/social-fb.png" class="fb" alt="fb"> </a>
+    <a href="https://twitter.com/"> <img src="images/social-twitter.png" class="twitter" alt="twitter"> </a>
+    <a href="https://www.instagram.com/"> <img src="images/social-insta.png" class="insta" alt="insta"> </a>
+    <a href="https://vimeo.com/"> <img src="images/social-vimeo.png" class="vimeo" alt="vimeo"> </a>
+    </div>
+    </footer>
+    
+  </body>
