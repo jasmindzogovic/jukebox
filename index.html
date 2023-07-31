@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jukebox Project</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="pop-up.js"></script>
+    <script defer src="pop-up.js"></script>
   </head>
 
   <body>
@@ -14,7 +14,7 @@
     <nav class="header-nav">
     <img src="images/jukebox-logo-blue.png" class="header-logo" alt="header-logo">
     <a href="#pricing-section" class="subscribe-btn">Subscribe</a>
-    <a href="#" class="login-btn" onclick="openForm()">Log In</a>
+    <a href="#" class="login-btn"">Log In</a>
     </nav>
     </header>
 
@@ -25,8 +25,8 @@
     <input type="text" placeholder="Enter Email" name="email" required>
     <label for="password"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="password" required>
-    <button type="submit" class="btn">Login</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+    <button type="submit" class="btn login">Login</button>
+    <button type="button" class="btn cancel">Close</button>
     </form>
     </div>
     
