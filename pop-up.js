@@ -12,18 +12,8 @@ closeBtn.addEventListener("click", () => {
   form.style.display = "none";
 });
 
-emailInput.addEventListener("focus", () => {
-  emailInput.placeholder = "";
-});
-
-emailInput.addEventListener("blur", () => {
-  emailInput.placeholder = "Please enter your email";
-});
-
-passwordInput.addEventListener("focus", () => {
-  passwordInput.placeholder = "";
-});
-
-passwordInput.addEventListener("blur", () => {
-  passwordInput.placeholder = "Enter Password";
+[emailInput, passwordInput].forEach((input) => {
+  input.addEventListener("focus", () => {
+    input.placeholder = "";
+  });
 });
